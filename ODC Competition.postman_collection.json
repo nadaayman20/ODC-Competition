@@ -1,0 +1,432 @@
+{
+	"info": {
+		"_postman_id": "4af1ef59-3915-407c-8c91-5ad586b57a7c",
+		"name": "ODC Competition",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24896031"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "sign up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fName\":\"Mohamed\",\r\n    \"lName\":\"ayman\",\r\n    \"password\":\"12345678\",\r\n    \"email\" :\"Mohamed@gmail.com\",\r\n    \"roleId\":\"63b6dfb23a8a84a51b48ea66\",\r\n    \"Qualification\":\"professional\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}user/signUp"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fName\":\"Mohamed\",\r\n    \"lName\":\"ayman\",\r\n    \"password\":\"12345678\",\r\n    \"email\" :\"Mohamed@gmail.com\",\r\n    \"roleId\":\"63b6dfb23a8a84a51b48ea66\",\r\n    \"Qualification\":\"professional\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}user/login"
+					},
+					"response": []
+				},
+				{
+					"name": "all User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2I2ZTE2NjNhOGE4NGE1MWI0OGVhOGYiLCJpYXQiOjE2NzI5Mjk2NTN9.KpFfDaS1FOt1zVhX2fmPFEz7ZkDKBj3yo3btMelFcV0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}user/allUser"
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2I2ZTE2NjNhOGE4NGE1MWI0OGVhOGYiLCJpYXQiOjE2NzI5Mjk2NTN9.KpFfDaS1FOt1zVhX2fmPFEz7ZkDKBj3yo3btMelFcV0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{baseURL}}user/profile/63b6e1663a8a84a51b48ea8f"
+					},
+					"response": []
+				},
+				{
+					"name": "log out",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2I2ZGZiZTNhOGE4NGE1MWI0OGVhNjgiLCJpYXQiOjE2NzI5MjkyMzB9.8ffSVTusHHTRw_cjo6OAb0m8jzyDOeESHIsMnOvV6_o",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}user/logOut/63b6dfbe3a8a84a51b48ea68"
+					},
+					"response": []
+				},
+				{
+					"name": "edit profile",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2I2ODY0MzgzYWEwZTUxYzY3NDViOTgiLCJpYXQiOjE2NzI5MDYzMTN9.ELFRw1robHSV2_oiz6tSblUNnFa1n8NPoHtjoss7uCI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}user/editProfile/63b6864383aa0e51c6745b98"
+					},
+					"response": []
+				},
+				{
+					"name": "get quiz",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2I2ZTE2NjNhOGE4NGE1MWI0OGVhOGYiLCJpYXQiOjE2NzI5Mjk2NTN9.KpFfDaS1FOt1zVhX2fmPFEz7ZkDKBj3yo3btMelFcV0",
+								"type": "text"
+							}
+						],
+						"url": "{{baseURL}}user/getQuiz"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Urls",
+			"item": [
+				{
+					"name": "add url",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"link\":\"/profile/\",\r\n            \"methods\":\"GET\",\r\n            \"params\":[\"_id\"],\r\n            \"Roles\":[\r\n                      {\r\n                         \"roleId\":\"63b67d75ab5941413c109962\"\r\n                     }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}url/addUrl"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "add role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userType\":\"customer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}role/addRole"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Shops",
+			"item": [
+				{
+					"name": "add shop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"shopName\":\"Flowers Loves\",\r\n    \"location\":[\r\n        {\"addressType\" :\"Dokii\"}\r\n    ],\r\n    \"plantID\":\"63b6c5073b6d684f3c14fc42\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}shop/addShop"
+					},
+					"response": []
+				},
+				{
+					"name": "delete shop",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{baseURL}}shop/deleteShop/63b6c5513b6d684f3c14fc44"
+					},
+					"response": []
+				},
+				{
+					"name": "edit shop",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}shop/editShop/63b6c5513b6d684f3c14fc44"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Plants",
+			"item": [
+				{
+					"name": "add Plants",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n    \"plantName\":\"rose\",\r\n    \"plantID\":1,\r\n    \"price\":100,\r\n   \"blogs\":\"Height: 40 Cmwidth: 40 Cm Add a bundle of brightness to your home with these zesty and beautiful sunflowers Colours and sizes may vary depending on season.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}plant/addPlants"
+					},
+					"response": []
+				},
+				{
+					"name": "delete Plants",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{baseURL}}plant/deletePlant/63b6d0ec5408702e6d06eb8d"
+					},
+					"response": []
+				},
+				{
+					"name": "edit Plants",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}plant/editPlants/63b6d0ec5408702e6d06eb8d"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "add Review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"nada\",\r\n   \"comment\":\"This store is one of the best stores, and the product is very beautiful, and the values ​​and smell of perfumes are very beautiful. Thank you very much for your taste\",\r\n   \"rate\":5\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}review/addReview"
+					},
+					"response": []
+				},
+				{
+					"name": "delete Review",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{baseURL}}review/deleteReview/63b6cf06f3c21e109017882a"
+					},
+					"response": []
+				},
+				{
+					"name": "edit Review",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}review/editReview/63b6cf06f3c21e109017882a"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Quiz",
+			"item": [
+				{
+					"name": "add Quiz",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}quiz/addQuiz"
+					},
+					"response": []
+				},
+				{
+					"name": "delete Quiz",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{baseURL}}quiz/deleteQuiz"
+					},
+					"response": []
+				},
+				{
+					"name": "edit Quiz",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": "{{baseURL}}quiz/editQuiz"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost:3000/api/",
+			"type": "string"
+		}
+	]
+}
